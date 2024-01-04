@@ -52,8 +52,8 @@ function updateSavedCards(args) {
           customer.getProfile().getWallet().removePaymentInstrument(creditCard);
         }
         // remove all current METHOD_ADYEN_COMPONENT PaymentInstruments
-        for (var _i = 0; _i < savedCreditCardsComponent.length; _i++) {
-          var _creditCard = savedCreditCardsComponent[_i];
+        for (var _i2 = 0; _i2 < savedCreditCardsComponent.length; _i2++) {
+          var _creditCard = savedCreditCardsComponent[_i2];
           customer.getProfile().getWallet().removePaymentInstrument(_creditCard);
         }
 
