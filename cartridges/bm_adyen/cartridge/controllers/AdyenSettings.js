@@ -46,8 +46,8 @@ server.post('TestConnection', server.middleware.https, function (req, res, next)
       merchantAccount: merchantAccount
     }));
     if (!callResult.isOk()) {
-      var _JSON$parse = JSON.parse(callResult.getErrorMessage()),
-        message = _JSON$parse.message;
+      var _JSON$parse2 = JSON.parse(callResult.getErrorMessage()),
+        message = _JSON$parse2.message;
       res.json({
         success: false,
         message: message,
