@@ -25,8 +25,6 @@ for (const environment of environments) {
 
       if (environment.name === 'SG') await checkoutPage.setEmail();
       await pendingPaymentsPage.doQRCodePayment('swish', environment.name);
-      if (environment.name.includes('SFRA'))
-        await checkoutPage.completeCheckout();
       await checkoutPage.expectQRcode();
     });
 

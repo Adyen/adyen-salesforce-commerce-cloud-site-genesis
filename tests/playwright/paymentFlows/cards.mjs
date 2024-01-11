@@ -9,10 +9,6 @@ export class Cards {
     await this.paymentMethodsPage.initiateCardPayment(cardData);
   };
 
-  doGiftCardPayment = async (cardData) => {
-    await this.paymentMethodsPage.initiateGiftCardPayment(cardData);
-  };
-
   do3Ds1Verification = async () => {
     await this.paymentMethodsPage.do3Ds1Verification();
   };
