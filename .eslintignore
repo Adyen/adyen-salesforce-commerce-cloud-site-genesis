@@ -1,0 +1,16 @@
+bundle.js
+.eslintrc.js
+
+# Transpiled code
+/cartridges
+
+# Compiled web component bundle file
+src/cartridges/int_adyen_controllers/cartridge/js/pages/checkout/bundle.js
+
+# Test files
+*.test.js
+
+# remove lines below from ignore after refactor
+src/cartridges/int_adyen_overlay
+src/cartridges/int_adyen_controllers
+src/cartridges/adyen_controllers_changes
